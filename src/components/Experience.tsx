@@ -9,10 +9,10 @@ const experiences = [
     location: "Dublin, Ireland",
     period: "November 2022 - Present",
     award: "Gastropub awarded Best Food Pub at the Irish Pub Awards 2023",
-    softSkills: ["Team Leadership", "Pressure Management", "Adaptability", "Attention to Detail"],
+    softSkills: ["Teamwork", "Pressure Management", "Adaptability", "Attention to Detail"],
     description: [
-      "Led and coordinated a team of 5 chefs, demonstrating strong leadership and communication skills while ensuring seamless kitchen operations during high-pressure service hours",
-      "Adapted quickly under pressure, handling last-minute changes and special dietary requirements with flexibility and attention to detail",
+      "Collaborated closely with a team of 5 chefs, demonstrating strong communication skills while ensuring seamless kitchen operations during high pressure service hours",
+      "Adapted quickly under pressure, handling last minute changes and special dietary requirements with flexibility and attention to detail",
     ],
   },
   {
@@ -32,7 +32,7 @@ const experiences = [
     period: "December 2020 - May 2022",
     softSkills: ["Communication", "Empathy", "Responsibility", "Documentation"],
     description: [
-      "Provided compassionate one-on-one care, developing strong interpersonal and communication skills while maintaining detailed documentation for medical staff and family members",
+      "Provided compassionate one on one care, developing strong interpersonal and communication skills while maintaining detailed documentation for medical staff and family members",
     ],
   },
 ];

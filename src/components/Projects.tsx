@@ -71,7 +71,7 @@ const projects = [
   {
     title: "Big Data Processing & Web Application",
     description:
-      "I Developed an end-to-end data system to process 25 million Spotify records (3.5GB). Using Hadoop MapReduce and Python, I built an ETL pipeline feeding a hybrid HBase - MySQL database. The data is served via a secure Spring Boot application, optimized with server-side pagination and performance-tuned using YCSB benchmarks.",
+      "I Developed a data system to process 25 million Spotify records (3.5GB). Using Hadoop MapReduce and Python, I built an ETL pipeline feeding a hybrid HBase - MySQL database. The data is served via a secure Spring Boot application, optimized with server-side pagination and performance-tuned using YCSB benchmarks.",
     technologies: ["Java", "Spring Boot", "Hadoop", "HBase", "Python", "MySQL", "Linux"],
     githubUrl: "https://github.com/iav2002/Big-Data-Processing-Web-Application",
     highlight: false,

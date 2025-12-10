@@ -43,7 +43,7 @@ export const About = () => {
               </div>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Developing deep learning solutions for real problems, such as my award-winning project for detecting synthetic images
+              Developing deep learning solutions for real problems, such as my award winning project for detecting synthetic images
             </p>
           </Card>
           <Card className="p-6 card-glass">
