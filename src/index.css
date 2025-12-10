@@ -9,73 +9,72 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 98%;
-    --foreground: 212 79% 20%;
+    --foreground: 220 15% 10%; /* Much darker for strong contrast */
 
     --card: 0 0% 100%;
-    --card-foreground: 212 79% 20%;
+    --card-foreground: 220 15% 10%; /* Much darker for strong contrast */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 212 79% 20%;
+    --popover-foreground: 220 15% 10%;
 
-    --primary: 210 100% 56%;
+    --primary: 217 91% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 212 82% 52%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 220 15% 25%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 210 40% 95%;
-    --muted-foreground: 212 30% 50%;
+    --muted: 220 15% 94%;
+    --muted-foreground: 220 10% 35%; /* Much darker for better contrast */
 
-    --accent: 212 75% 45%;
+    --accent: 217 91% 60%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 40% 90%;
-    --input: 210 40% 90%;
-    --ring: 210 100% 56%;
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 217 91% 60%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    /* Custom design tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(210 100% 56%) 0%, hsl(212 82% 52%) 100%);
-    --card-shadow: 0 4px 6px -1px hsl(212 79% 20% / 0.1), 0 2px 4px -2px hsl(212 79% 20% / 0.1);
-    --card-hover-shadow: 0 10px 15px -3px hsl(212 79% 20% / 0.15), 0 4px 6px -4px hsl(212 79% 20% / 0.1);
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Sidebar */
+    --sidebar-bg: 0 0% 100%;
+    --sidebar-border: 220 15% 88%;
   }
 
   .dark {
-    --background: 212 79% 10%;
-    --foreground: 210 40% 95%;
+    --background: 220 15% 9%; /* Darker slate */
+    --foreground: 0 0% 98%;
 
-    --card: 212 70% 15%;
-    --card-foreground: 210 40% 95%;
+    --card: 220 15% 9%; /* Same as background for unified look */
+    --card-foreground: 220 10% 85%; /* gray-300 */
 
-    --popover: 212 70% 15%;
-    --popover-foreground: 210 40% 95%;
+    --popover: 220 15% 9%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 210 100% 56%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 220 15% 9%;
 
-    --secondary: 212 82% 52%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 220 10% 15%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 212 60% 20%;
-    --muted-foreground: 210 30% 65%;
+    --muted: 220 10% 15%;
+    --muted-foreground: 220 10% 70%; /* gray-400 */
 
-    --accent: 212 75% 45%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 220 15% 9%;
 
-    --destructive: 0 62.8% 50%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 63% 50%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 212 60% 20%;
-    --input: 212 60% 20%;
-    --ring: 210 100% 56%;
+    --border: 0 0% 100% / 0.1; /* white/10 for glass borders */
+    --input: 220 10% 15%;
+    --ring: 217 91% 60%;
 
-    --card-shadow: 0 4px 6px -1px hsl(0 0% 0% / 0.3), 0 2px 4px -2px hsl(0 0% 0% / 0.2);
-    --card-hover-shadow: 0 10px 15px -3px hsl(0 0% 0% / 0.4), 0 4px 6px -4px hsl(0 0% 0% / 0.3);
+    /* Sidebar */
+    --sidebar-bg: 220 15% 9%; /* Same as background */
+    --sidebar-border: 0 0% 100% / 0.1; /* white/10 */
   }
 }
 
@@ -86,5 +85,28 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Glass card style for dark mode */
+  .dark .card-glass {
+    background: rgba(255, 255, 255, 0.02) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: none !important;
+    transition: all 0.3s ease;
+  }
+  
+  .dark .card-glass:hover {
+    background: rgba(255, 255, 255, 0.05) !important;
+  }
+  
+  /* Free text - no background */
+  .dark .text-free {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
   }
 }
