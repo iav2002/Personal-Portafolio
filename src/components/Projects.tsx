@@ -65,7 +65,7 @@ const projects = [
       "Designed and built a fast, efficient URL shortening service using Python - Flask and Vercel. By choosing a serverless approach backed by Supabase, I created a system that runs without any server maintenance or idle costs, while still being able to scale instantly if were need it.",
     technologies: ["Python", "Flask", "Vercel", "Supabase", "PostgreSQL"],
     githubUrl: "https://github.com/iav2002/URL-Shortener",
-    deployedUrl: "https://url-shortener-cycl.vercel.app/https://url-shortener-cycl.vercel.app/",
+    deployedUrl: "https://url-shortener-cycl.vercel.app",
     highlight: false,
   },
   {
