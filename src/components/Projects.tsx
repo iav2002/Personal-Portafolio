@@ -55,7 +55,7 @@ const projects = [
     description:
       "Built a scalable backend system using Spring Boot and PostgreSQL to handle complex product and order data as a classic E-commerce. I integrated Gemini to automate content generation and created a React dashboard to test the system end to end. The entire platform is containerized with Docker and deployed on AWS.",
     technologies: ["Java", "Spring Boot", "Spring AI", "Gemini", "PostgreSQL", "Docker", "AWS"],
-    githubUrl: "https://github.com/iav2002/2fa-microservice",
+    githubUrl: "https://github.com/iav2002/E-Commerce_Gemini",
     deployedUrl: "/#projects",
     highlight: false,
   },
