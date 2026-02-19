@@ -53,10 +53,10 @@ const projects = [
   {
     title: "AI Integrated E-Commerce Backend",
     description:
-      "Built a scalable backend system using Spring Boot and PostgreSQL to handle complex product and order data as a classic E-commerce. I integrated Gemini to automate content generation and created a React dashboard to test the system end to end. The entire platform is containerized with Docker and deployed on AWS.",
+      "Built a scalable backend system using Spring Boot and PostgreSQL to handle product and order data as a classic E-commerce. I integrated Gemini to automate content generation and created a React dashboard to test the system end to end. The entire platform is containerized with Docker and deployed on AWS.",
     technologies: ["Java", "Spring Boot", "Spring AI", "Gemini", "PostgreSQL", "Docker", "AWS"],
     githubUrl: "https://github.com/iav2002/E-Commerce_Gemini",
-    deployedUrl: "/#projects",
+    deployedUrl: "https://ecom.ignalarcon.dev/",
     highlight: false,
   },
   {
@@ -101,7 +101,7 @@ export const Projects = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} id="projects" className="py-6 px-8 bg-background">
+    <section ref={sectionRef} id="projects" className="pt-2 px-8 bg-background">
       <div className="container max-w-6xl mx-auto">
         <h2 className={`text-3xl font-bold mb-8 text-foreground transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
           Projects
