@@ -8,20 +8,16 @@ export const About = () => {
         <h2 className="text-6xl font-bold mb-8 text-foreground leading-tight">Hello, I'm Ignacio</h2>
         <Card className="p-8 card-glass mb-12">
           <div className="space-y-6 text-xl text-muted-foreground leading-relaxed">
-            <p>
-              An aspiring software and AI engineer from Bolivia, based in Dublin. I studied Computer Science at CCT College Dublin 
-              and I am now doing an MSc in Data Science at TU Dublin. Most of my work sits between{" "}
-              <span className="font-semibold text-foreground">backend engineering</span> and{" "}
-              <span className="font-semibold text-foreground">deep learning</span>. I like building systems and 
-              applying AI to problems that actually matter. I also have experience with{" "}
-              <span className="font-semibold text-foreground">cloud infrastructure</span>, having worked with AWS and Docker 
-              to deploy and manage applications. I try to keep a simple rule in mind in every project:{" "}
-              <span className="font-semibold text-foreground">fail fast, learn faster</span>.
-            </p>
-            <p>
-              Recently I worked on a deep learning project for detecting synthetic images that placed third at the HECA 
-              Student Research Awards. When I am not coding you will probably find me playing chess or watching football.
-            </p>
+         <p>Hi, I'm Ignacio, a <strong>Site Reliability Engineer intern at Crusoe</strong>. I'm from Bolivia, based in Dublin, and most of my time right now goes into <strong>cloud infrastructure</strong>: keeping things running, automating the parts nobody wants to do by hand, and learning how large scale compute really behaves once it is in production.</p>
+
+          <p>Before this I studied Computer Science at CCT College Dublin, and I'm wrapping up an MSc in Data Science at TU Dublin, with my dissertation coming later this year. The AI side has stuck with me too. I built a synthetic image detection model that placed third at the HECA Student Research Awards, and I like keeping one foot in <strong>deep learning</strong>, especially now that the systems I want to run reliably are the same ones training and serving models.</p>
+
+          <p>Outside of all that, you'll usually find me playing chess or watching football.</p>
+
+          <p><strong>If it doesn't exist yet, build it.</strong></p>
+
+
+
           </div>
         </Card>
         
