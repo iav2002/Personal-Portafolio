@@ -7,6 +7,7 @@ import hecaAward from "@/assets/heca-award.jpg";
 import aiPoster from "@/assets/ai-detection-poster.png";
 
 const techLogos: { [key: string]: string } = {
+  PyTorch: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg",
   Python: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
   TensorFlow: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
   Keras: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg",
@@ -60,12 +61,11 @@ const projects = [
     highlight: false,
   },
   {
-    title: "Serverless URL Shortener",
+    title: "Deep Learning: Warehouse Perception & Navigation",
     description:
-      "Designed and built a fast, efficient URL shortening service using Python - Flask and Vercel. By choosing a serverless approach backed by Supabase, I created a system that runs without any server maintenance or idle costs, while still being able to scale instantly if were need it.",
-    technologies: ["Python", "Flask", "Vercel", "Supabase", "PostgreSQL"],
-    githubUrl: "https://github.com/iav2002/URL-Shortener",
-    deployedUrl: "https://url-shortener-cycl.vercel.app",
+      "An advanced deep learning study on a synthetic NVIDIA Omniverse warehouse dataset, split across perception and navigation. For perception I compared parameter efficient fine tuning methods (LoRA, progressive unfreezing, differential learning rates) on ResNet50 and ViT, reaching 99% classification accuracy. For navigation I built a Deep Q Network agent from scratch in a custom environment, taking it from 0% to a 90% success rate through experience replay and a target network.",
+    technologies: ["Python", "PyTorch", "LoRA", "ViT", "Reinforcement Learning"],
+    githubUrl: "https://github.com/iav2002/Assignment_Advanced_Topics_In_DeepLearning",
     highlight: false,
   },
   {
